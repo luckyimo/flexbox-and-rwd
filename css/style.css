@@ -1,0 +1,128 @@
+  /* general styles */ 
+    * {     
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+    
+    a {
+      text-decoration: none;
+      color: white;
+    }
+
+    /* nav-bar */
+    .nav-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background-color: #15202b;
+      color: white;
+      flex-wrap: wrap;
+    }
+    
+    .logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+    
+    .nav-links {
+      display: flex;
+      gap: 1.5rem;
+    }
+
+     /* Hero Section */
+    .hero {
+      background: linear-gradient(135deg, #0f4c81, #1e81b0);
+      color: white;
+      text-align: center;
+      padding: 4rem 2rem;
+      animation: fadeIn 2s ease-in;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+    }
+    .hero p {
+      margin: 1rem 0;
+    }
+    .cta-btn {
+      background-color: #ffffff;
+      color: #1e81b0;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+      border-radius: 5px;
+      transition: background 0.3s, transform 0.3s;
+    }
+    .cta-btn:hover {
+      background-color: #f0f8ff;
+      transform: scale(1.05);
+    }
+
+    /* Keyframes */
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    /* Features Section */
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      padding: 4rem 2rem;
+    }
+    .card {
+      background-color: #f5f5f5;
+      padding: 1.5rem;
+      border-radius: 10px;
+      width: 300px;
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+    .card h3 {
+      margin-bottom: 1rem;
+    }
+    .card p {
+      margin-bottom: 1rem;
+    }
+    .card button {
+      background-color: #1e81b0;
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .card button:hover {
+      background-color: #16658a;
+    }
+
+
+    /* Footer */
+    .footer {
+      background-color: #15202b;
+      color: white;
+      text-align: center;
+      padding: 2rem 0;
+      margin-top: 2rem;
+    }
